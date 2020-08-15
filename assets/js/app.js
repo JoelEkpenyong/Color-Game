@@ -9,6 +9,20 @@ var resetBtn = document.querySelector("#reset")
 var easy = document.getElementsByTagName("button")[1]
 var hard = document.getElementsByTagName("button")[2]
 var extra = document.querySelectorAll(".extra")
+var help = document.getElementById('help-btn')
+var close = document.getElementById('close-btn')
+var instruction = document.getElementById('help')
+var main = document.querySelector('.main')
+
+
+
+help.addEventListener('click', triggerHelp)
+close.addEventListener('click', triggerHelp)
+
+function triggerHelp(){
+    main.classList.toggle('hide');
+    instruction.classList.toggle('hide')
+}
 
 
 init();
@@ -102,5 +116,6 @@ function hardMode (){
     }
     reset()
 }
+
 
 

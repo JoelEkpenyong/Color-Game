@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+
+    
+
     <div id="fixed">
+        <div id="help-btn">
+            ?
+        </div>
         <header>
             <h1>The Great <span id="color">rgb</span> Color Game</h1>
         </header>
@@ -22,17 +28,28 @@
         </nav>
     </div>
 
-
     <section id="container">
-        <div class="squares"></div>
-        <div class="squares"></div>
-        <div class="squares"></div>
-        <div class="squares"></div>
-        <div class="squares"></div>
-        <div class="squares"></div>
-        <div class="squares easyMode extra"></div>
-        <div class="squares easyMode extra"></div>
-        <div class="squares easyMode extra"></div>
+        <div id="help" class="hide">
+            <div class="head">
+                <h3>Game Guide</h3>
+                <span id="close-btn">X</span>
+            </div>
+            <div class="help-body">
+                <h3>The game instructions are simple, select from the options of colors, the color that matches the RGB code above.</h3>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="squares"></div>
+            <div class="squares"></div>
+            <div class="squares"></div>
+            <div class="squares"></div>
+            <div class="squares"></div>
+            <div class="squares"></div>
+            <div class="squares easyMode extra"></div>
+            <div class="squares easyMode extra"></div>
+            <div class="squares easyMode extra"></div>
+        </div>
     </section>
 
 
