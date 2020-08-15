@@ -93,5 +93,18 @@ button:hover{
     background-color: steelblue;
     color: #fff;
 }
+@media screen and (max-width: 530px){
+    #fixed{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width:350px){
+    #fixed h1{
+        font-size: .9rem;
+    }
+    #container{
+        margin-top: -5rem;
+    }
+}
 
 
